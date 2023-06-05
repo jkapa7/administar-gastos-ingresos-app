@@ -3,15 +3,16 @@ import Header from "./components/Header";
 import TransactionForm from "./components/transactions/TransactionForm";
 import Balance from "./components/Balance";
 import TransactionList from "./components/transactions/TransactionList";
+import IncomeExpenses from "./components/IncomeExpenses";
 
 const App = () => {
   return (
     <GlobalProvider>
       <Header />
+      <IncomeExpenses />
       <Balance />
       <TransactionForm />
       <TransactionList />
-      <h1>Hello World</h1>
     </GlobalProvider>
   );
 };
